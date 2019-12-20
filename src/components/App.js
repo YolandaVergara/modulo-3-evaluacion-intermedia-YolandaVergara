@@ -11,7 +11,7 @@ function App() {
         {Characters.map((Character, key) => {
           return (
             <Pokemon
-            key={key}
+            id={key}
             image={Character.url}
             name={Character.name}
             type={Character.types}
