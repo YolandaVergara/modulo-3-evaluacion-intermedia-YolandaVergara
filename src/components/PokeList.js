@@ -2,7 +2,7 @@ import React from 'react';
 
 function PokeList(props) {
   return (
-    <ul className="list-group list-group-flush">
+    <ul className="row">
       {props.children}
     </ul>
 
