@@ -4,25 +4,35 @@ import PokeList from './PokeList';
 import Characters from './apiData/api.json';
 import Pokemon from './Pokemon';
 
-function App() {
-  return (
-    <div className="App">      
-      <PokeList>
-        {Characters.map((Character, key) => {
-          return (
-            <Pokemon
-            id={key}
-            image={Character.url}
-            name={Character.name}
-            type={Character.types}
-            />
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      data: Characters
+    };
+  }
+
+  render() {
+    return (
+      <div className="App card">  
+      <h1>Mi lista de Pokemon</h1>    
+        <PokeList>
+          {Characters.map((Character, key) => {
+            return (
+              <Pokemon
+              id={key}
+              image={Character.url}
+              name={Character.name}
+              type={Character.types}
+              />
+            )
+          }
           )
-        }
-        )
-        }
-      </PokeList>
-    </div>
-  );
+          }
+        </PokeList>
+      </div>
+    );
+  }
 }
 
 export default App;

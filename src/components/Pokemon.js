@@ -2,7 +2,7 @@ import React from 'react';
 
 function Pokemon(props) {
   return (    
-    <li>
+    <li className="list-group-item">
       <img
         src={props.image}
         alt={props.name} />
