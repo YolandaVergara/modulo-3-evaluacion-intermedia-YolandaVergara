@@ -17,13 +17,13 @@ class App extends React.Component {
       <div className="App container-md">  
       <h1 className="h1">Mi lista de Pokemon</h1>    
         <PokeList>
-          {Characters.map((Character, key) => {
+          {Characters.map((character) => {
             return (
               <Pokemon
-              id={key}
-              image={Character.url}
-              name={Character.name}
-              type={Character.types}
+              id={character.id}
+              image={character.url}
+              name={character.name}
+              type={character.types}
               />
             )
           }
