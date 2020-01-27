@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 function Pokemon(props) {
   return (
-    <li className="list-group-item list-group-item-success col-sm-4 mr-1 mb-1 w-50">
+    <li className="cards-detail">
       <img
-        className="card-img"
+        className="card-image"
         src={props.image}
         alt={props.name} />
 

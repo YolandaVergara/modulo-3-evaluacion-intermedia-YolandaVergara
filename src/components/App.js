@@ -14,7 +14,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App container-md">  
+      <div className="app">  
       <h1 className="h1">Mi lista de Pokemon</h1>    
         <PokeList>
           {Characters.map((character) => {
